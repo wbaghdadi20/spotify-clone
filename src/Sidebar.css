@@ -5,23 +5,28 @@
 
 .sidebar-section {
   margin: 9px;
-  padding: 20px 20px 7px 20px;
+  padding: 0px 20px 7px 20px;
   padding-left: 25px;
   background-color: #121212;
   border-radius: 8px;
 }
 
 .spotify-logo {
+  padding-top: 20px;
   width: 75px;
   object-fit: contain;
 }
 
 .sidebar-section-line {
   display: flex;
-  flex: 1;
   align-items: center;
-  margin-top: 5px;
   padding: 10px 10px 10px 0px;
+}
+
+.search,
+.home {
+  flex: 1;
+  margin-top: 5px;
 }
 
 .sidebar-section-line:hover {
@@ -31,4 +36,24 @@
 .sidebar-section-line > span {
   margin-left: 20px;
   font-weight: 600;
+}
+
+.your-library {
+  position: relative;
+}
+
+.library {
+  padding-top: 18px;
+  opacity: 0.8;
+}
+
+.library-plus-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  opacity: 0.8;
+}
+
+.library-plus-icon:hover {
+  opacity: 1;
 }

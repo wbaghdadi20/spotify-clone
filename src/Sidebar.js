@@ -3,6 +3,7 @@ import "./Sidebar.css";
 import HomeIcon from "@mui/icons-material/Home";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import LibraryMusicIcon from "@mui/icons-material/LibraryMusic";
+import AddOutlinedIcon from "@mui/icons-material/AddOutlined";
 
 function SideBar({ search }) {
   return (
@@ -29,7 +30,13 @@ function SideBar({ search }) {
         </div>
       </div>
 
-      <div className="sidebar-section"></div>
+      <div className="sidebar-section your-library">
+        <div className="sidebar-section-line library">
+          <LibraryMusicIcon />
+          <span>Your Library</span>
+        </div>
+        <AddOutlinedIcon className="library-plus-icon" />
+      </div>
     </div>
   );
 }
