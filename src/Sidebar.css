@@ -3,6 +3,7 @@
   background-color: #000;
   display: flex;
   flex-direction: column;
+  height: 100vh;
 }
 
 .sidebar-section {
@@ -27,6 +28,7 @@
   display: flex;
   align-items: center;
   padding: 10px 10px 10px 0px;
+  transition: opacity 0.3s ease;
 }
 
 .search,
@@ -46,6 +48,8 @@
 }
 
 .your-library {
+  display: flex;
+  flex-direction: column;
   position: relative;
   flex: 1;
   margin-bottom: 9px;
@@ -53,15 +57,17 @@
 
 .library {
   padding-top: 18px;
-  opacity: 0.8;
+  opacity: 0.7;
   width: fit-content;
+  transition: opacity 0.3s ease;
 }
 
 .library-plus-icon {
   position: absolute;
   top: 20px;
   right: 20px;
-  opacity: 0.8;
+  opacity: 0.3;
+  transition: opacity 0.3s ease;
 }
 
 .library-plus-icon:hover {
@@ -80,21 +86,63 @@
 }
 
 .sidebar-subsection > small {
-  /* border: 1px solid red; */
   margin-top: -12px;
   font-weight: 500;
 }
 
-.sidebar-subsection > button {
+button {
   width: 130px;
   height: 30px;
   border-radius: 30px;
   margin-top: 20px;
   margin-bottom: 10px;
   border: none;
-  transition: transform 0.2s ease;
+  transition: transform 0.1s ease;
+  font-weight: 700;
 }
 
-.sidebar-subsection > button:hover {
+button:hover {
   transform: scale(1.03);
+  cursor: pointer;
+}
+
+.sidebar-footer {
+  margin-top: auto;
+  margin-bottom: 50px;
+}
+
+.sidebar-footer > p {
+  font-size: 11px;
+  font-weight: 600;
+  color: #a7a7a7;
+}
+
+.sidebar-footer > p > span {
+  margin-right: 20px;
+}
+
+.sidebar-footer > p > span:hover {
+  cursor: pointer;
+}
+
+.underline:hover {
+  text-decoration: underline;
+}
+
+.sidebar-footer > button {
+  display: flex;
+  border: 1px solid;
+  border-color: #a7a7a7;
+  background-color: #121212;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 35px;
+  margin-top: 30px;
+  font-weight: 700;
+}
+
+.sidebar-footer > button:hover {
+  border-color: white;
 }
