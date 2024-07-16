@@ -1,4 +1,20 @@
 .body {
+  display: flex;
+  flex-direction: column;
   flex: 1;
-  background-color: #121212;
+  min-height: 100vh;
+  max-height: 100vh;
+  /* border: 1px solid red; */
+}
+
+.body-main-content {
+  background: linear-gradient(
+    to bottom,
+    #222222 0%,
+    #101010 300px,
+    #101010 100%
+  );
+  margin: 9px;
+  border-radius: 8px;
+  overflow-y: scroll;
 }

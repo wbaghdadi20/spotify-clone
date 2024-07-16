@@ -39,16 +39,18 @@ function SideBar({ search }) {
         </div>
         <AddOutlinedIcon className="library-plus-icon" />
 
-        <div className="sidebar-subsection">
-          <h4>Create your first playlist</h4>
-          <small>It's easy, we'll help you</small>
-          <button>Create playlist</button>
-        </div>
+        <div className="sidebar-scrollable">
+          <div className="sidebar-subsection">
+            <h4>Create your first playlist</h4>
+            <small>It's easy, we'll help you</small>
+            <button>Create playlist</button>
+          </div>
 
-        <div className="sidebar-subsection">
-          <h4>Let's find some podcasts to follow</h4>
-          <small>We'll keep you updated on new episodes</small>
-          <button>Browse podcasts</button>
+          <div className="sidebar-subsection">
+            <h4>Let's find some podcasts to follow</h4>
+            <small>We'll keep you updated on new episodes</small>
+            <button>Browse podcasts</button>
+          </div>
         </div>
 
         <div className="sidebar-footer">
