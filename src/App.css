@@ -2,4 +2,5 @@
   display: flex;
   height: 100vh;
   color: white;
+  user-select: none;
 }

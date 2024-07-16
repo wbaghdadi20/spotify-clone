@@ -36,6 +36,26 @@ function SideBar({ search }) {
           <span>Your Library</span>
         </div>
         <AddOutlinedIcon className="library-plus-icon" />
+
+        <div className="sidebar-subsection">
+          <h4>Create your first playlist</h4>
+          <small>It's easy, we'll help you</small>
+          <button>
+            <strong>Create playlist</strong>
+          </button>
+        </div>
+
+        <div className="sidebar-subsection">
+          <h4>Let's find some podcasts to follow</h4>
+          <small>We'll keep you updated on new episodes</small>
+          <button>
+            <strong>Browse podcasts</strong>
+          </button>
+        </div>
+
+        <div className="sidebar-footer">
+            
+        </div>
       </div>
     </div>
   );
