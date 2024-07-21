@@ -4,3 +4,19 @@
   user-select: none;
   background-color: #000;
 }
+
+button {
+  width: 130px;
+  height: 30px;
+  border-radius: 30px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border: none;
+  transition: transform 0.1s ease;
+  font-weight: 700;
+}
+
+button:hover {
+  transform: scale(1.03);
+  cursor: pointer;
+}
